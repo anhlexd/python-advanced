@@ -29,6 +29,7 @@ from django.http import HttpResponse
 
 def index(request):
     if request.method == 'POST':
+        
         f = AnimalForm(request.POST)
         if f.is_valid():
             f.save()

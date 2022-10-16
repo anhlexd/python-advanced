@@ -31,11 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'asm_04',
-    'form_from_model',
-    'file_uploader',
-    'user_auth',
-    'polls.apps.PollsConfig',
+    # 'form_from_model',
+    # 'file_uploader',
+    # 'user_auth',
+    # 'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,6 +72,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
 

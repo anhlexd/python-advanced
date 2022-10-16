@@ -21,7 +21,8 @@ urlpatterns = [
     # path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     # path('user-auth/', include('user_auth.urls')),
-    path('file-upload/',include('file_uploader.urls')),
-    path('form-from-model/',include('form_from_model.urls')),
+    # path('file-upload/',include('file_uploader.urls')),
+    # path('form-from-model/',include('form_from_model.urls')),
     path('asm-04',include('asm_04.urls')),
+    path('registration',include('registration.urls')),
 ]
