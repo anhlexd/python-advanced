@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% comment %} This is list countries in the world from database {% endcomment %}
+<h1> List of countries in the world </h1>
+<p> There are about 200 countries in the world. </p>
+<p> Some of famous countries are: </p>
+<div>
+    <ul>
+        {% for ct in countries %}
+            <li>{{ ct|upper }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

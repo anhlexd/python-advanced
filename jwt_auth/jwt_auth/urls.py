@@ -1,4 +1,4 @@
-"""myproject URL Configuration
+"""jwt_auth URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,21 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include
-
+from users.views import UserAPIView
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 urlpatterns = [
-    # path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    # path('user-auth/', include('user_auth.urls')),
-    # path('file-upload/',include('file_uploader.urls')),
-    # path('form-from-model/',include('form_from_model.urls')),
-    path('asm-04',include('asm_04.urls')),
-    path('registration',include('registration.urls')),
-    path('pagination',include('pagination.urls')),
-    path('adv-temp/',include('adv_temp.urls')),
-    path('redis-cache/',include('redis_cache.urls')),
-    path('login/',include('login.urls')), 
-    path('members/',include('members.urls')),
-  
+    path('api/user/', UserAPIView.as_view(), name='user'),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]

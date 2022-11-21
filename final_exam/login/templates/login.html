@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<style>
+h3 {
+    color: red;
+}
+</style>
+    <h2> Login </h2>
+    {% for message in messages %}
+    <h3> {{ message }}</h3>
+    {% endfor %}
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="uname" placeholder="User name">
+        <br><br>
+        <input type="text" name="pwd" placeholder="Password">
+        <br><br>
+        <input type="submit" name="submit" value="Login">
+    </form>
+{% endblock %}
