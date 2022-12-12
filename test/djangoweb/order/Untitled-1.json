@@ -1,0 +1,60 @@
+{
+	"customer_name": "tuananh",
+	"customer_phone": "01234567",
+	"customer_address": "hanoi ",
+	"product" : [
+		{
+			"product_name" : "ao",
+			"product_price" : "1000",
+			"quantity" : "1",
+			"total_price" : "1000"
+		}, 
+		{
+			"product_name" : "quan",
+			"product_price" : "200",
+			"quantity" : "2",
+			"total_price" : "400"
+		}, 
+		{
+			"product_name" : "mu",
+			"product_price" : "400",
+			"quantity" : "1",
+			"total_price" : "800"
+		}
+	]
+}
+
+{
+"product_name" : "quan",
+"product_price" : "200",
+"quantity" : "1",
+"total_price" : "200"
+}
+
+{
+"product_name" : "ao",
+"product_price" : "1000",
+"quantity" : "2",
+"total_price" : "2000"
+}
+
+
+{
+
+	"customer_name": "tua",
+	"customer_phone": "067",
+	"customer_address": "hanoi "
+}
+
+{
+"customer_name": "tua",
+"customer_phone": "067",
+"customer_address": "hanoi"
+}
+
+
+{
+	"customer_name": "TuanEm",
+	"customer_phone": "123456",
+	"customer_address": "da nang"
+	}

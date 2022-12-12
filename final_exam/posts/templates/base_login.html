@@ -4,7 +4,7 @@
     <title> {% block title %}{% endblock %}</title>
 </head>
 <body>
-    <h1> My Site </h1>
+    <h1> My Blog </h1>
 
     <a href="/">Home</a>
     <span>/</span>
@@ -18,7 +18,7 @@
         <span>/</span>
         <a href="{% url 'signup' %}">Sign up</a>
         <hr>
-        <h2>Login to access this website!</h2>
+        <!-- <h2>Login to access this website!</h2> -->
     {% endif %}
 
     {% block body %}{% endblock %}

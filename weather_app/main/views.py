@@ -1,18 +1,13 @@
 from django.shortcuts import render
-# import json to load json data to python dictionary
 import json
-# urllib.request to make a request to api
 import urllib.request
 
 
 def index(request):
 	if request.method == 'POST':
 		city = request.POST['city']
-		''' api key might be expired use your own api_key
-			place api_key in place of appid ="your_api_key_here " '''
 
 		# source contain JSON data from API
-
 		source = urllib.request.urlopen(
 			f'http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid=d0dadac9d660203ef55759aaad8dc939').read()
 
